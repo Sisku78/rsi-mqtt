@@ -1,0 +1,22 @@
+{
+  "socket_bind": "0.0.0.0",
+  "socket_listen_port": 888,
+  "socket_timeout": 5.0,
+  "mqtt_host": "127.0.0.1",
+  "mqtt_port": 1883,
+  "mqtt_prefix": "homeassistant",
+  "home_assistant_integration": 1,
+  "home_assistant_sensors": {
+    "alarm_alert": {
+      "device_class": "problem",
+      "default_state": "OFF",
+      "sensor_type": "binary_sensor"
+    }
+  },
+  "mapping_events": {
+    "1": { "type": "alarm_alert", "state": "ON", "comment": "Intrusión detectada" }
+  },
+  "mapping_users": {
+    "1": "Usuario1"
+  }
+}
