@@ -1,5 +1,5 @@
 {
-  "socket_bind": "0.0.0.0",
+  "socket_bind": "192.168.0.98",
   "socket_listen_port": 888,
   "socket_timeout": 5.0,
   "mqtt_host": "127.0.0.1",
