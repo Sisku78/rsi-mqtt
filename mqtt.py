@@ -1,7 +1,6 @@
-# mqtt.py
-
 import paho.mqtt.client as mqtt
 import logging
+import json  
 
 def mqtt_start_server(config):
     """
@@ -10,6 +9,10 @@ def mqtt_start_server(config):
     """
     try:
         client = mqtt.Client()
+
+        # Establecer credenciales del usuario MQTT
+        client.username_pw_set(config["mqtt_user"], config["mqtt_password"])
+
         client.connect(config["mqtt_host"], config["mqtt_port"])
         logging.info("Conexión MQTT establecida.")
         return client
