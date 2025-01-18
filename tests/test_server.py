@@ -9,7 +9,7 @@ logging.basicConfig(level=logging.INFO, format='[%(asctime)s] %(message)s')
 log = logging.getLogger()
 
 # Configuración del servidor de prueba
-SERVER_HOST = "127.0.0.1"  # Cambiar si el servidor está en otra IP
+SERVER_HOST = "192.168.0.98"  # Cambiar si el servidor está en otra IP
 SERVER_PORT = 888          # Asegurarse de que coincida con el servidor
 
 # Función para enviar eventos al servidor
